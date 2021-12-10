@@ -29,12 +29,8 @@ streamteam_table <- streamteam %>%
                   fill = "#DEDEDE") +                                      # Changing the binwidth and colours
    geom_vline(aes(xintercept = mean(discharge)),                           # Adding a line for mean
               colour = "black", linetype = "dashed", size = 1) +           # Changing the look of the linec("#FFFFFF", "#FFFFFF", "#FFFFFF")
-   geom_vline(aes(xintercept = mean(discharge) + 0.00857),                           # Adding a line for mean
-              colour = "black", linetype = "dotted", size = 1) +
-   geom_vline(aes(xintercept = mean(discharge) - 0.00857),                           # Adding a line for mean
-              colour = "black", linetype = "dotted", size = 1) +
    theme_bw() +                                                            # Changing the theme to get rid of the grey background
-   ylab("Frequency\n") +                                                       # Changing the text of the y axis label
+   ylab("Frequency\n") +                                                   # Changing the text of the y axis label
    xlab(expression(paste("\nDischarge (", m^3, s^-1, ")"))) +              # \n adds a blank line between axis and text
    scale_x_continuous(breaks = seq(0.01, 0.19, 0.02)) +
    theme(axis.text = element_text(size = 12),                              # Changing font size of axis labels and title
@@ -45,7 +41,8 @@ streamteam_table <- streamteam %>%
 # main plot for discharge v method
 
 (dis_plot_test <- ggplot(streamteam) + 
-    geom_jitter(aes(Method, discharge, shape = Method), col = "black", size = 2) +
+    geom_jitter(aes(Method, discharge, shape = Method), col = "black", size = 2,
+                width = 0.25) +
     geom_point(data = streamteam, aes(Method, discharge), col = "black",
                stat = "summary", fun = "mean", size = 4) + 
     geom_errorbar (data = streamteam_table, 
@@ -61,8 +58,7 @@ streamteam_table <- streamteam %>%
     theme(panel.grid = element_blank(),                                    # Removing the grey grid lines
           plot.margin = unit(c(1, 1, 1, 1), units = "cm")))                # Putting a 1 cm margin around the plot
  
-#geom_jitter(data = streamteam, aes(method, discharge)) +
-#  guides(shape = guide_legend("Method")))
+
 
 # fill values for viridis colour pallette:
 # fill = c("#FDE725", "#A0DA39", "#4AC16D", "#1fa187", 
@@ -74,7 +70,8 @@ shapiro.test(streamteam$discharge)
 
 kruskal.test(discharge ~ Method, data = streamteam)
 
-PT = pairwise.wilcox.test(streamteam$discharge, streamteam$Method, p.adjust.method = "none")
+PT = pairwise.wilcox.test(streamteam$discharge, streamteam$Method, 
+                          p.adjust.method = "none")
 PT
 
 
