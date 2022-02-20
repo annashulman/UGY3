@@ -21,6 +21,27 @@ At the top of the screen there's also a link to the [Hello World guide](https://
 ## Create a new file
 ## Using Markdown
 
+## Issues
+The Issues in GitHub is a multipurpose tool to communicate with other repository collaborators. This is one of my favourite functions in GitHub. Most often, it is used when someone has a question/problem they would like another collaborator to take a look at. Other times, it can also be used to give outlining structure to a project. For example, you can open an issue to assign project tasks and goals each week. 
+A useful aside: You can opt into receiving email notifications from GitHub. These will then notify you via email when an issue is opened, or when someone responds to an issue within a repository you're a part of. 
+
+Here's how to open an issue:
+
+#### 1. Click the 'Issues' tab in the menu bar at the top of your screen
+<img width="840" alt="Screenshot 2022-02-20 at 09 31 27" src="https://user-images.githubusercontent.com/91272561/154836524-17723fa2-3019-4410-88bb-5ec2c708ae65.png">
+
+#### 2. Click the 'New Issue' button
+<img width="1105" alt="Screenshot 2022-02-20 at 09 32 00" src="https://user-images.githubusercontent.com/91272561/154836549-ad6ac25f-e515-4dcf-a4cb-859857c5f576.png"> <br>
+
+#### 3. Describe the problem
+GitHub will prompt you to add a title and a description of what you would like to include in your issue. The title is what everyone will immediately when scrolling through the issues, so it is good to make these short and informative -- easily understandable at a glance, essentially. 
+
+To help with organisation and clarity, GitHub also allows you to add tags to your issue, e.g. "bug problem" or "weekly agenda". These tags can be created and re-used in different issues throughout the repository. For when a repository accumulates a lot of issues, you can find a specific one by inputing a tag into the search bar.
+
+The description of issues follows the same format as a standard .md file. This means you can use headers, images, code/bold/italics text to help other collaborators understand a problem that you are having.
+
+#### 4. Click 'Submit New Issue"
+
 ## Download GitHub Desktop Version
 ### What's the difference between the online and desktop versions of GitHub?
 The online version of GitHub is the published version. This is the version that other collaborators viewing the files you upload will see. GitHub Desktop allows you to save a local version of GitHub repositories to your own computer. This will allow you to edit/add/delete files locally, but be aware that *such changes will not appear online until you 'push' them online* (more on this process later). 
