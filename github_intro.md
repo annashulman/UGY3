@@ -136,8 +136,6 @@ This goes back to ensuring that all changes you make locally are 'pushed' to the
 
 ** Also please let me know if y'all have any problems with GitHub Desktop -- I access GitHub locally on my computer through R, rather than GitHub Desktop, so I don't have a lot of experience with Desktop. Both processes seem to give the end result, but GitHub Desktop seems a lot friendlier to folks who don't code -- hence why I included it here. 
 
-## Version Control
-
 ## Your profile
 The last point I wanted to touch on in this brief introduction is customising your account. 
 In the online version, you can view your profile by clicking the small circle icon in the top right hand side of your screen and selecting 'Your Profile'.  
