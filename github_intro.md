@@ -1,5 +1,12 @@
 # Introduction to GitHub for 1.5 Max
 ## Why is GitHub useful?
+
+#### Version control
+GitHub is a widely used platform, particularly in the programming community, because of version control. Version control saves previous versions of documents and folders, enabling project contributors to revert to older versions at any time. This feature is also very useful for creating reproducible research. Collaborators can see the progress of a project by viewing its history (more on this later). <br> 
+
+#### A platform designed for collaborative projects
+GitHub has many tools that make interacting with other project collaborators relatively easy. In this document, I'll highlight the 'Issues' tool as one of my favourite ways to organise project tasks and ask other collaborators for help. 
+
 ## Sign Up for GitHub
 #### 1. Go to the [GitHub website](https://github.com/)
 #### 2. Click on the 'Sign Up' button in the top right hand corner of your screen
@@ -47,8 +54,33 @@ The last bit -- choosing a license -- is one that I've not explored in depth. Gi
 <br> And you're done! <br>
 
 ## READMEs
+README.md documents are among the most essential organisational features of a GitHub repository. A README is a document that outlines the purpose of the repository and its contents. Since it is a .md file, you can add headers, images, hyperlinks, etc to your document to make it more useful and appear professional. <br> 
+
+A repository should contain an overarching README.md document and ideally, have one for each folder within the repository. The repository-wide README.md generally should provide a brief description of repository folders and their purpose, as well as any important information a new collaborator would need to understand repository contents. This could be, for example, elaborating on any common abbreviations or how to use the repository. 
+
+Folder README.md files can generally be a little more relaxed in structure, but they should similarly contain a brief description of folder contents. Any background knowledge required to understand any content should also be included.
+
 ## Create a new file
-## Using Markdown
+In the online version of GitHub, you cannot create an empty folder within a repository; it requires you to make a file as well. It is useful to make this initial file a README for the intended purpose of the folder.
+
+To do this, click on the 'Add file' button on the top of your repository screen. This will give you the option to either create a new file or upload a file. For now, go to 'Create new file'. <br> 
+
+<img width="817" alt="Screenshot 2022-02-26 at 09 57 56" src="https://user-images.githubusercontent.com/91272561/155838843-31bf5403-0de8-4da3-8e1f-c29c00cca0a3.png"> <br> 
+This will prompt you to name your new folder or file here: <br> 
+<img width="276" alt="Screenshot 2022-02-26 at 10 02 48" src="https://user-images.githubusercontent.com/91272561/155838963-bd9c28fe-514f-49cd-b683-c3e233a0139c.png"> <br>
+The repository name shows up in blue ('UGY3' in this case). Say I wanted to create a new folder for the contents of an Ecological Measurement class, called EM. To do that, I would enter EM and add another slash after the name: <br>
+<img width="311" alt="Screenshot 2022-02-26 at 10 05 39" src="https://user-images.githubusercontent.com/91272561/155839039-58b35c9a-c5a9-4f67-b6fb-487ce9a7ea8a.png"> <br>
+Then you can name your file. GitHub recognises different file types; you can add a document type to the end of your name (e.g. README.md rather than README) and GitHub will recognise that you are creating a markdown file. <br>
+From there, add the desired contents to your document and scroll down to the 'Commit new file' section at the bottom of your screen. 
+
+<img width="701" alt="Screenshot 2022-02-26 at 10 09 59" src="https://user-images.githubusercontent.com/91272561/155839176-46282e55-8c2b-4742-9d6a-b4a58cbf0f22.png">
+The first text box is where you briefly describe the new document you created. It is good practice to include your name and keep the message to under 50 characters. When creating a README.md file, a good commit message may be: 'Anna created the EM folder README.md.'
+
+The second text box is an optional extended description.
+
+For the bubble choice, I recommend always committing directly to the ```main``` branch. Creating a new branch and doing pull requests, while useful in some instances, can create version control problems when learning how to use GitHub.
+
+When you're ready, press 'Commit new file'. Your folder/file should now appear in the published GitHub repository for other collaborators to see.
 
 ## Issues
 The Issues in GitHub is a multipurpose tool to communicate with other repository collaborators. This is one of my favourite functions in GitHub. Most often, it is used when someone has a question/problem they would like another collaborator to take a look at. Other times, it can also be used to give outlining structure to a project. For example, you can open an issue to assign project tasks and goals each week. 
@@ -96,7 +128,11 @@ For me, GitHub Desktop appeared in my 'Downloads' folder. You can move this to w
 <img width="953" alt="Screenshot 2022-02-19 at 17 28 12" src="https://user-images.githubusercontent.com/91272561/154812661-b3a8bdde-2601-4e98-919d-9bc117645d99.png">
 Your account information may already populate the screen, but if not, you may have to log in again. <br>
 #### 4. Click 'Authorize Desktop' <br>
-This will open GitHub Desktop again, and your username should autopopulate a form. After confirming this step, your GitHub Desktop and online GitHub account should be linked.
+This will open GitHub Desktop again, and your username should autopopulate a form. After confirming this step, your GitHub Desktop and online GitHub account should be linked. <br>
+
+From here, I recommend going through the tutorial that GitHub desktop provides on how to navigate the platform. This will create a tutorial repository and walk you through how to create a branch, edit a file, make commits, and publish to GitHub. <br>
+
+This goes back to ensuring that all changes you make locally are 'pushed' to the online published version of GitHub. The main points to know about avoiding version control problems, are, in order: (1) committing changes, (2) pulling from origin and then (3) pushing. Committing your changes essentially saves them, but doesn't publish them to the online repository. Before that, it is good practice to pull from origin. That essentially ensures that all of your documents locally are up-to-date with thet published versions. Then, you can push the changes you have made to the online repository. When editing materials from a repository locally, it is good to commit, pull and push regularly to avoid version control issues.
 
 ** Also please let me know if y'all have any problems with GitHub Desktop -- I access GitHub locally on my computer through R, rather than GitHub Desktop, so I don't have a lot of experience with Desktop. Both processes seem to give the end result, but GitHub Desktop seems a lot friendlier to folks who don't code -- hence why I included it here. 
 
